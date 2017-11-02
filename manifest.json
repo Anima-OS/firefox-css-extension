@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Pop Firefox Extension",
+  "version": "1",
+
+  "description": "Ensures a uniform look for widgets on webpages in Pop.",
+
+  "icons": {
+    "48": "icons/pop-icon-48.png",
+    "96": "icons/pop-icon-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*"],
+      "css": ["borderify.js"]
+    }
+  ]
+
+}
