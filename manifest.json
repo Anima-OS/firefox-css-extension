@@ -2,9 +2,9 @@
 
   "manifest_version": 2,
   "name": "Pop Firefox Extension",
-  "version": "1",
+  "version": "2",
 
-  "description": "Ensures a uniform look for widgets on webpages in Pop.",
+  "description": "Ensures a uniform look for unstyled widgets on webpages in Pop.",
 
   "icons": {
     "48": "icons/pop-icon-48.png",
