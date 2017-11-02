@@ -1,0 +1,45 @@
+/*
+ * We want to specify an generic, default style for widgets on webpages.
+ * The reason in this case being that without a style, many widgets become ugly
+ * or illegible (!) when a user has the dark theme selected. This prevents that
+ * and makes the defautl styles look just a little bit Pop-y.
+ *
+ * Styling based on the system76.com stylesheet.
+ */
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='radio']):not([class='gsfi']),
+select {
+    -moz-appearance: none !important;
+    border-radius: 4px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #574e4a;
+    color: rgba(0,0,0,0.75);
+    font-family: inherit;
+    font-size: 1rem;
+    height: 2rem;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    padding-left: .5em;
+    padding-right: 1.5em;
+    text-valign: center;
+    transition: border-color .15s linear,background .15s linear;
+}
+
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='radio']):not([class='gsfi lst-d-f']):focus,
+select:focus {
+    box-shadow: 0 0 4px #faa41a;
+    border-color: #faa41a;
+    outline: none;
+}
+
+select {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QsCEQgO/pD1VQAAAKNJREFUCNdVylEOgWAAwPF/8pB1B3nQFTgVWVvGm80sq4U4inWTSoRxiKaHPp8HQ37PP8VdzKWqNhlYFprWoq4sH+zCECEqGqISpElM4HuU5eMvBb5HmsSISqDuo2h2SBOulwvHLKPX7yPEk3Xgk59OtA0D2xmjSCllURT4S5f7/UbXNAE45zmG0cGZTNF1/R0B6hn4S8AvfvJ2swJgOLK/CeAFT3daU6pFztQAAAAASUVORK5CYII=');
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+
+
+#downloads-indicator-counter {
+    color: white !important;
+}
