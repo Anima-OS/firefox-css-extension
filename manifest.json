@@ -13,8 +13,8 @@
 
   "content_scripts": [
     {
-      "matches": ["*"],
-      "js": ["pop-firefox.css"]
+      "matches": ["<all_urls>"],
+      "css": ["pop-firefox.css"]
     }
   ]
 
